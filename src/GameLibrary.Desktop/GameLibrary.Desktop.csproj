@@ -1,0 +1,18 @@
+<Project Sdk="Uno.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-desktop</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <UnoSingleProject>true</UnoSingleProject>
+    <ApplicationTitle>Game Library</ApplicationTitle>
+    <ApplicationId>com.aqvm.gamelibrary</ApplicationId>
+    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationPublisher>Game Library contributors</ApplicationPublisher>
+    <Description>Local-first game library.</Description>
+    <UnoFeatures>CSharpMarkup;SkiaRenderer;</UnoFeatures>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameLibrary.Application\GameLibrary.Application.csproj" />
+    <ProjectReference Include="..\GameLibrary.Infrastructure\GameLibrary.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

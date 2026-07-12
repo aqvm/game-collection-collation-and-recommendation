@@ -39,6 +39,8 @@
 - **Revisit if:** Desktop accessibility, library virtualization, charting, startup/package size, Windows integration, Linux/macOS viability, or testing is materially inadequate.
 - **Fallback:** Avalonia code-only; accepting its documentation ecosystem rather than adopting XAML by default.
 
+**Validation evidence (2026-07-11):** Uno 6.5.36 compiles against .NET 10 desktop. A C#-only shell renders a 2,500-item local `ListView`, keyboard-focusable search, and activity panel. The domain/application/infrastructure projects have no Uno dependency. No exit criterion was triggered; no competing production prototype was created.
+
 ### ADR-004 — Permissive open-source license
 
 - **Status:** Proposed

@@ -1,0 +1,9 @@
+{
+  "response": {
+    "game_count": 2,
+    "games": [
+      { "appid": 10, "name": "Counter-Strike", "playtime_forever": 30 },
+      { "appid": 20, "name": "Team Fortress Classic", "playtime_forever": 0 }
+    ]
+  }
+}
