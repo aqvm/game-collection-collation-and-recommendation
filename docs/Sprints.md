@@ -7,15 +7,15 @@ Sprints are ordered capability increments, not calendar boxes. Each ends in work
 **Outcome:** A buildable Windows-first solution with enforceable architecture, CI, a code-defined desktop shell, and resolved first-order technical unknowns.
 
 - [x] Initialize Git.
-- [ ] Choose Apache-2.0 or MIT, create a non-`main` implementation branch, and add contribution/security basics.
-- [ ] Pin current .NET LTS and dependencies; enable nullable types, analyzers, deterministic builds, formatting, and warnings policy.
-- [ ] Create Domain/Application/Infrastructure/Desktop/test project boundaries.
-- [ ] Render a small Uno C# Markup library shell from fake data; check keyboard/focus, virtualization approach, startup/package size, testability, and OS integration.
-- [ ] Confirm or replace Uno using ADR-003 exit criteria—no parallel production prototypes.
-- [ ] Establish SQLite migration/recovery test and OS credential-vault abstraction.
-- [ ] Add structured redacted logging, background job state model, and activity-panel skeleton.
-- [ ] Write Steam capability/authorization report with sanitized fixtures.
-- [ ] Create initial threat model and data inventory.
+- [x] Choose Apache-2.0 or MIT, create a non-`main` implementation branch, and add contribution/security basics.
+- [x] Pin current .NET LTS and dependencies; enable nullable types, analyzers, deterministic builds, formatting, and warnings policy.
+- [x] Create Domain/Application/Infrastructure/Desktop/test project boundaries.
+- [x] Render a small Uno C# Markup library shell from fake data; check keyboard/focus, virtualization approach, startup/package size, testability, and OS integration.
+- [x] Confirm or replace Uno using ADR-003 exit criteria—no parallel production prototypes.
+- [x] Establish SQLite migration/recovery test and OS credential-vault abstraction.
+- [x] Add structured redacted logging, background job state model, and activity-panel skeleton.
+- [x] Write Steam capability/authorization report with sanitized fixtures.
+- [x] Create initial threat model and data inventory.
 
 **Demo:** The app opens quickly, browses a large fake library smoothly, shows a detailed fake background job, and passes CI.
 
@@ -23,16 +23,18 @@ Sprints are ordered capability increments, not calendar boxes. Each ends in work
 
 **Outcome:** A useful offline library from a real Steam account.
 
-- [ ] Implement the narrowest responsible Steam connection/import path established in Sprint 0.
-- [ ] Store immutable sync observations, platform copies, canonical games, and connection health.
-- [ ] Implement idempotent snapshot/diff/reconciliation with cancellation and recovery.
-- [ ] Browse, search, filter, and open a game detail view from cached local data.
-- [ ] Implement preferred-copy selection and explain why a copy is preferred.
-- [ ] Implement purgatory and the explicit recovery filter; test exclusion invariants.
-- [ ] Allow durable correction of editable metadata and lifecycle state.
-- [ ] Surface detailed synchronization phases, changes, errors, and retry state.
+- [x] Implement the narrowest responsible Steam connection/import path established in Sprint 0.
+- [x] Store immutable sync observations, platform copies, canonical games, and connection health.
+- [x] Implement idempotent snapshot/diff/reconciliation with cancellation and recovery.
+- [x] Browse, search, filter, and open a game detail view from cached local data.
+- [x] Implement preferred-copy selection and explain why a copy is preferred.
+- [x] Implement purgatory and the explicit recovery filter; test exclusion invariants.
+- [x] Allow durable correction of editable metadata and lifecycle state.
+- [x] Surface detailed synchronization phases, changes, errors, and retry state.
 
 **Demo:** Disconnect the network, launch immediately, browse the previously imported real library, inspect copies, exclude/restore a game, and rerun sync without duplicates.
+
+> Live-account demo status: pending user-provided SteamID64 and Web API key. Fixture-backed connector, reconciliation, exclusion, recovery, and offline-cache tests pass locally.
 
 ## Sprint 2 — Identity, manual ownership, and backlog
 
